@@ -11,7 +11,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BeautySalon","name":"Hello Cutie Salon",
 "address":{"@type":"PostalAddress","addressLocality":"Korangi Crossing, Karachi","addressCountry":"PK"},
-"openingHours":"Mo-Su 11:00-21:00","priceRange":"$$",
+"openingHours":"Mo-Su 13:00-22:00","priceRange":"$$",
 "hasOfferCatalog":{"@type":"OfferCatalog","name":"Salon Services","itemListElement":[
 {"@type":"Offer","itemOffered":{"@type":"Service","name":"Haircut & Styling"}},
 {"@type":"Offer","itemOffered":{"@type":"Service","name":"Bridal & Party Makeup"}},
@@ -22,8 +22,8 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"How do I book an appointment at Hello Cutie Salon?","acceptedAnswer":{"@type":"Answer","text":"Choose a service, pick your date and time, and enter your name and mobile number. Your booking appears in the salon's appointment list instantly."}},
-{"@type":"Question","name":"Where is Hello Cutie Salon located?","acceptedAnswer":{"@type":"Answer","text":"Hello Cutie Salon is located at Korangi Crossing, Karachi, serving Korangi Crossing and nearby areas."}},
-{"@type":"Question","name":"What are Hello Cutie Salon's opening hours?","acceptedAnswer":{"@type":"Answer","text":"Open daily, 11:00 AM to 9:00 PM."}},
+{"@type":"Question","name":"Where is Hello Cutie Salon located?","acceptedAnswer":{"@type":"Answer","text":"Hello Cutie Salon is located at Shop # M/7-8, 1st Floor, Aman Orchid Residency & Shopping Mall, Korangi Crossing Rd, Korangi, Karachi."}},
+{"@type":"Question","name":"What are Hello Cutie Salon's opening hours?","acceptedAnswer":{"@type":"Answer","text":"Open daily, 1:00 PM to 10:00 PM."}},
 {"@type":"Question","name":"Does Hello Cutie Salon offer bridal packages?","acceptedAnswer":{"@type":"Answer","text":"Yes, bridal and party makeup packages are available. Book a consultation and the salon will confirm your package and slot."}}]}
 </script>
 <style>
@@ -112,7 +112,7 @@
     </div>
     <div class="stats">
       <div><b>8</b><small>Services</small></div>
-      <div><b>7</b><small>Time slots daily</small></div>
+      <div><b>6</b><small>Time slots daily</small></div>
       <div><b>1 min</b><small>To book</small></div>
     </div>
   </div></section>
@@ -156,16 +156,16 @@
       <button onclick="toggleFaq(this)">How do I book an appointment at Hello Cutie Salon?</button>
       <p>Choose a service above, pick your date and time, and enter your name and mobile number. Your booking appears in the salon's appointment list instantly.</p>
       <button onclick="toggleFaq(this)">Where is Hello Cutie Salon located?</button>
-      <p>Hello Cutie Salon is located at Korangi Crossing, Karachi, serving Korangi Crossing and nearby areas.</p>
+      <p>Hello Cutie Salon is located at Shop # M/7-8, 1st Floor, Aman Orchid Residency &amp; Shopping Mall, Korangi Crossing Rd, Korangi, Karachi.</p>
       <button onclick="toggleFaq(this)">What are your opening hours?</button>
-      <p>Open daily, 11:00 AM – 9:00 PM. Your booking confirmation always shows the exact slot.</p>
+      <p>Open daily, 1:00 PM – 10:00 PM. Your booking confirmation always shows the exact slot.</p>
       <button onclick="toggleFaq(this)">Do you offer bridal packages?</button>
       <p>Yes — bridal and party makeup packages are available. Book a consultation from the form above and the salon will confirm your package and slot.</p>
       <button onclick="toggleFaq(this)">Can I change or cancel my booking?</button>
       <p>Yes. Just message the salon on WhatsApp with your name and booking time, and it will be moved or cancelled.</p>
     </div>
 
-    <p class="note">Demo preview — final services, timings, prices and contact number are set by the salon before launch.</p>
+    <p class="note">Demo preview — final services and prices are set by the salon before launch.</p>
   </div>
 </main>
 
@@ -173,7 +173,7 @@
   <div class="wrap">
     <div class="gold-rule" style="margin-bottom:14px"></div>
     <div class="serif" style="font-size:22px;font-weight:800">Hello Cutie Salon</div>
-    <div style="margin:8px 0">Korangi Crossing, Karachi &nbsp;•&nbsp; Open Daily 11 AM – 9 PM</div>
+    <div style="margin:8px 0">Shop # M/7-8, 1st Floor, Aman Orchid Residency &amp; Shopping Mall, Korangi Crossing Rd, Karachi<br>Open Daily 1 PM – 10 PM</div>
     <a href="#book">Book an appointment</a> &nbsp;•&nbsp; <a href="#services">Services</a>
     <div style="margin-top:14px"><button class="btn ghost" onclick="navigator.clipboard.writeText(location.href);this.textContent='✓ Link copied';">Share this page</button></div>
   </div>
@@ -182,10 +182,9 @@
 <div class="bottombar"><a class="btn rose" href="#book">Book an Appointment →</a></div>
 
 <script>
-/* Salon WhatsApp number (international format, digits only, e.g. 923001234567).
-   Abhi khaali hai — number milte hi yahan lagayenge, phir booking ka message
-   seedha salon ke WhatsApp par khulega, bina copy-paste ke. */
-const SALON_WHATSAPP = "";
+/* Salon WhatsApp number (international format, digits only) — booking messages
+   open directly in the salon's WhatsApp chat, prefilled and ready to send. */
+const SALON_WHATSAPP = "923338224567";
 const services = [
   ["Haircut & Styling","Cut, blow-dry & finish","45 min"],
   ["Hair Colour & Highlights","Full colour, balayage, highlights","2 hrs"],
@@ -196,7 +195,7 @@ const services = [
   ["Waxing & Threading","Face & body, gentle products","30 min"],
   ["Hair Treatment","Keratin, protein & hair spa","90 min"]
 ];
-const times = ["11:00 AM","12:30 PM","2:00 PM","3:30 PM","5:00 PM","6:30 PM","8:00 PM"];
+const times = ["1:00 PM","2:30 PM","4:00 PM","5:30 PM","7:00 PM","8:30 PM"];
 let chosenService = services[0][0], chosenTime = times[0];
 const grid = document.getElementById('serviceGrid');
 const sel = document.getElementById('serviceSel');
@@ -225,9 +224,9 @@ function updateLive(){
 }
 updateLive();
 const sampleAppts = [
-  ["Ayesha K.","Haircut & Styling","11:00 AM","Confirmed","Sample"],
-  ["Fatima S.","Facial & Skin Care","2:00 PM","Confirmed","Sample"],
-  ["Zainab M.","Mehndi","5:00 PM","Pending","Sample"]
+  ["Ayesha K.","Haircut & Styling","1:30 PM","Confirmed","Sample"],
+  ["Fatima S.","Facial & Skin Care","4:00 PM","Confirmed","Sample"],
+  ["Zainab M.","Mehndi","7:00 PM","Pending","Sample"]
 ];
 let myAppts = [];
 try { myAppts = JSON.parse(localStorage.getItem('hc_my_bookings') || '[]'); } catch(e){ myAppts = []; }
