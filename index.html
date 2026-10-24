@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hello Cutie Salon — Korangi Crossing, Karachi</title>
+<meta name="description" content="Hello Cutie Salon is a ladies salon at Korangi Crossing, Karachi. Book haircut, bridal makeup, facial, mehndi, manicure and pedicure appointments online in under a minute.">
+<meta property="og:title" content="Hello Cutie Salon — Korangi Crossing, Karachi">
+<meta property="og:description" content="Ladies salon at Korangi Crossing, Karachi. Services, instant answers and online booking — all in one place.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BeautySalon","name":"Hello Cutie Salon",
+"address":{"@type":"PostalAddress","addressLocality":"Korangi Crossing, Karachi","addressCountry":"PK"},
+"openingHours":"Mo-Su 11:00-21:00","priceRange":"$$",
+"hasOfferCatalog":{"@type":"OfferCatalog","name":"Salon Services","itemListElement":[
+{"@type":"Offer","itemOffered":{"@type":"Service","name":"Haircut & Styling"}},
+{"@type":"Offer","itemOffered":{"@type":"Service","name":"Bridal & Party Makeup"}},
+{"@type":"Offer","itemOffered":{"@type":"Service","name":"Facial & Skin Care"}},
+{"@type":"Offer","itemOffered":{"@type":"Service","name":"Mehndi"}},
+{"@type":"Offer","itemOffered":{"@type":"Service","name":"Manicure & Pedicure"}}]}}
+</script>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;color:#2b2326;background:#fff8f9;line-height:1.5}
+  header{background:#fff;border-bottom:1px solid #f3d9de;position:sticky;top:0;z-index:10}
+  .wrap{max-width:720px;margin:0 auto;padding:0 18px}
+  .top{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+  .logo{font-size:22px;font-weight:800;color:#a4133c;letter-spacing:.2px}
+  .logo span{color:#ff8fa3}
+  .btn{display:inline-block;background:#25D366;color:#fff;text-decoration:none;font-weight:700;padding:11px 20px;border-radius:999px;border:0;cursor:pointer;font-size:15px}
+  .btn.pink{background:#c9184a}
+  .btn:active{transform:scale(.98)}
+  .hero{padding:34px 0 10px;text-align:center}
+  .hero h1{font-size:32px;line-height:1.2;color:#590d22}
+  .hero p{color:#6b565e;margin:12px 0 20px;font-size:17px}
+  .pill{display:inline-block;background:#ffe5ec;color:#a4133c;font-weight:700;font-size:13px;padding:6px 14px;border-radius:999px}
+  h2{font-size:22px;color:#590d22;margin:30px 0 12px}
+  .feat{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:22px 0 4px}
+  .feat div{background:#fff;border:1.5px solid #f3d9de;border-radius:14px;padding:13px;text-align:center}
+  .feat b{display:block;color:#a4133c;font-size:15px}
+  .feat small{color:#8a6d75}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .card{background:#fff;border:1.5px solid #f3d9de;border-radius:16px;padding:16px;cursor:pointer;transition:.15s}
+  .card:hover{border-color:#ff8fa3}
+  .card.sel{border-color:#c9184a;background:#fff0f3;box-shadow:0 0 0 2px #ffc2d1}
+  .card b{display:block;font-size:16px}
+  .card small{color:#8a6d75}
+  .card .dur{margin-top:8px;font-size:13px;font-weight:700;color:#c9184a}
+  .form{background:#fff;border:1.5px solid #f3d9de;border-radius:18px;padding:18px}
+  label{font-weight:700;font-size:14px;display:block;margin:14px 0 6px}
+  input,select{width:100%;padding:12px;border:1.5px solid #e8c8cf;border-radius:12px;font-size:15px;background:#fff}
+  .slots{display:flex;flex-wrap:wrap;gap:8px}
+  .slot{padding:9px 14px;border:1.5px solid #e8c8cf;border-radius:999px;background:#fff;cursor:pointer;font-size:14px;font-weight:600}
+  .slot.sel{background:#c9184a;color:#fff;border-color:#c9184a}
+  .summary{display:none;background:#f0fdf4;border:1.5px solid #bbf7d0;border-radius:16px;padding:16px;margin-top:16px}
+  .summary.show{display:block}
+  .summary h3{color:#166534;margin-bottom:6px}
+  .appt{border:1px solid #f3d9de;border-radius:14px;padding:13px 15px;margin-bottom:10px;background:#fff}
+  .appt b{color:#590d22}
+  .appt small{color:#8a6d75}
+  .tag{float:right;background:#ffe5ec;color:#a4133c;font-size:11px;font-weight:800;padding:3px 9px;border-radius:999px}
+  .faq button{width:100%;text-align:left;background:#fff;border:1.5px solid #f3d9de;border-radius:12px;padding:13px 15px;margin-bottom:8px;font-size:15px;cursor:pointer;font-weight:600;color:#590d22}
+  .faq p{display:none;background:#fff0f3;border-radius:12px;padding:12px 15px;margin:-2px 0 10px;color:#5b3a44}
+  .faq p.show{display:block}
+  footer{margin-top:36px;background:#590d22;color:#ffd6e0;padding:26px 0 30px;text-align:center}
+  footer a{color:#fff}
+  .note{font-size:12px;color:#8a6d75;text-align:center;margin:16px 0 4px}
+  @media(max-width:520px){.grid{grid-template-columns:1fr}.feat{grid-template-columns:1fr}.hero h1{font-size:27px}}
+</style>
+</head>
+<body>
+<header><div class="wrap top">
+  <div class="logo">Hello <span>Cutie</span> Salon</div>
+  <a class="btn" href="#book">Book Now</a>
+</div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <span class="pill">Ladies Salon — Korangi Crossing, Karachi</span>
+    <h1>Beauty, booked in under a minute.</h1>
+    <p>Hello Cutie Salon is a ladies salon at Korangi Crossing, Karachi, offering hair, bridal makeup, facial, mehndi, manicure and pedicure. Pick your service, choose a time, and your appointment is confirmed — no waiting for a callback, no missed calls.</p>
+    <a class="btn pink" href="#book">Book an Appointment →</a>
+    <div class="feat">
+      <div><b>All services, one place</b><small>Every service with its time, on one page</small></div>
+      <div><b>Instant answers</b><small>Hours, location &amp; packages, right away</small></div>
+      <div><b>One appointment list</b><small>Every booking lands in a single list</small></div>
+    </div>
+  </section>
+
+  <h2 id="services">Our Services</h2>
+  <p style="color:#8a6d75;margin-bottom:12px">Tap a service to start your booking.</p>
+  <div class="grid" id="serviceGrid"></div>
+
+  <h2 id="book">Book Your Appointment</h2>
+  <div class="form">
+    <label>Your name</label>
+    <input id="custName" type="text" placeholder="e.g. Ayesha Khan">
+    <label>Mobile number</label>
+    <input id="custPhone" type="tel" placeholder="03xx xxxxxxx">
+    <label>Service</label>
+    <select id="serviceSel"></select>
+    <label>Date</label>
+    <input id="bookDate" type="date">
+    <label>Preferred time</label>
+    <div class="slots" id="slotBox"></div>
+    <button class="btn pink" style="width:100%;margin-top:18px;padding:14px" onclick="confirmBooking()">Confirm Booking →</button>
+    <div class="summary" id="summary"></div>
+  </div>
+
+  <h2>Today's Appointments — All in One List</h2>
+  <p style="color:#8a6d75;margin-bottom:12px">Every booking from the website lands here automatically, so nothing gets lost in chat.</p>
+  <div id="apptList"></div>
+
+  <h2>Questions, Answered Instantly</h2>
+  <p style="color:#8a6d75;margin-bottom:12px">Common questions, answered right away — even when the salon is busy.</p>
+  <div class="faq" id="faqBox">
+    <button onclick="toggleFaq(this)">How do I book an appointment at Hello Cutie Salon?</button>
+    <p>Choose a service above, pick your date and time, and enter your name and mobile number. Your booking appears in the salon's appointment list instantly.</p>
+    <button onclick="toggleFaq(this)">Where is Hello Cutie Salon located?</button>
+    <p>Hello Cutie Salon is located at Korangi Crossing, Karachi, serving Korangi Crossing and nearby areas.</p>
+    <button onclick="toggleFaq(this)">What are your opening hours?</button>
+    <p>Open daily, 11:00 AM – 9:00 PM. Your booking confirmation always shows the exact slot.</p>
+    <button onclick="toggleFaq(this)">Do you offer bridal packages?</button>
+    <p>Yes — bridal and party makeup packages are available. Book a consultation from the form above and the salon will confirm your package and slot.</p>
+    <button onclick="toggleFaq(this)">Can I change or cancel my booking?</button>
+    <p>Yes. Just message the salon on WhatsApp with your name and booking time, and it will be moved or cancelled.</p>
+  </div>
+
+  <p class="note">Demo preview — final services, timings, prices and contact number are set by the salon before launch.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div style="font-size:20px;font-weight:800">Hello Cutie Salon</div>
+    <div style="margin:8px 0">Korangi Crossing, Karachi &nbsp;•&nbsp; Open Daily 11 AM – 9 PM</div>
+    <a href="#book">Book an appointment</a> &nbsp;•&nbsp; <a href="#services">Services</a>
+  </div>
+</footer>
+
+<script>
+const services = [
+  ["Haircut & Styling","Cut, blow-dry & finish","45 min"],
+  ["Hair Colour & Highlights","Full colour, balayage, highlights","2 hrs"],
+  ["Facial & Skin Care","Deep-cleanse, glow & whitening facials","60 min"],
+  ["Bridal & Party Makeup","Signature bridal and event looks","2–3 hrs"],
+  ["Mehndi","Bridal & party henna designs","1–2 hrs"],
+  ["Manicure & Pedicure","Classic, gel & spa treatments","60 min"],
+  ["Waxing & Threading","Face & body, gentle products","30 min"],
+  ["Hair Treatment","Keratin, protein & hair spa","90 min"]
+];
+const times = ["11:00 AM","12:30 PM","2:00 PM","3:30 PM","5:00 PM","6:30 PM","8:00 PM"];
+let chosenService = services[0][0], chosenTime = times[0];
+const grid = document.getElementById('serviceGrid');
+const sel = document.getElementById('serviceSel');
+services.forEach((s,i)=>{
+  const d = document.createElement('div');
+  d.className = 'card' + (i===0 ? ' sel' : '');
+  d.innerHTML = '<b>'+s[0]+'</b><small>'+s[1]+'</small><div class="dur">⏱ '+s[2]+'</div>';
+  d.onclick = ()=>{ document.querySelectorAll('.card').forEach(c=>c.classList.remove('sel')); d.classList.add('sel'); chosenService=s[0]; sel.value=s[0]; document.getElementById('book').scrollIntoView({behavior:'smooth'}); };
+  grid.appendChild(d);
+  const o = document.createElement('option'); o.textContent = s[0]; sel.appendChild(o);
+});
+sel.onchange = ()=>{ chosenService = sel.value; document.querySelectorAll('.card').forEach(c=>c.classList.toggle('sel', c.querySelector('b').textContent===chosenService)); };
+const slotBox = document.getElementById('slotBox');
+times.forEach((t,i)=>{
+  const b = document.createElement('button'); b.type='button'; b.className='slot'+(i===0?' sel':''); b.textContent=t;
+  b.onclick = ()=>{ document.querySelectorAll('.slot').forEach(x=>x.classList.remove('sel')); b.classList.add('sel'); chosenTime=t; };
+  slotBox.appendChild(b);
+});
+document.getElementById('bookDate').valueAsDate = new Date();
+const sampleAppts = [
+  ["Ayesha K.","Haircut & Styling","11:00 AM","Confirmed"],
+  ["Fatima S.","Facial & Skin Care","2:00 PM","Confirmed"],
+  ["Zainab M.","Mehndi","5:00 PM","Pending"]
+];
+function renderAppts(){
+  document.getElementById('apptList').innerHTML = sampleAppts.map(a=>
+    '<div class="appt"><span class="tag">'+a[3]+'</span><b>'+a[0]+'</b><br><small>'+a[1]+' — Today, '+a[2]+'</small></div>').join('');
+}
+renderAppts();
+function toggleFaq(btn){ const p = btn.nextElementSibling; p.classList.toggle('show'); }
+function confirmBooking(){
+  const name = document.getElementById('custName').value.trim();
+  const phone = document.getElementById('custPhone').value.trim();
+  const date = document.getElementById('bookDate').value;
+  if(!name || !phone){ alert('Please enter your name and mobile number.'); return; }
+  sampleAppts.unshift([name, chosenService, chosenTime, "New"]);
+  renderAppts();
+  const msg = "Hello Cutie Salon booking: " + name + " (" + phone + ") — " + chosenService + ", " + date + " at " + chosenTime + ". Please confirm.";
+  const box = document.getElementById('summary');
+  box.classList.add('show');
+  box.innerHTML = '<h3>✓ Booking received!</h3><p><b>'+name+'</b> — '+chosenService+'<br>'+date+' at '+chosenTime+'</p>' +
+    '<p style="margin:10px 0">Your booking is now in the salon\'s appointment list above. Tap below to copy it for WhatsApp:</p>' +
+    '<button class="btn" style="width:100%" onclick="navigator.clipboard.writeText('+JSON.stringify(msg)+');this.textContent=\'✓ Message copied — paste it in WhatsApp\';">Send on WhatsApp</button>';
+  box.scrollIntoView({behavior:'smooth', block:'center'});
+}
+</script>
+</body>
+</html>
